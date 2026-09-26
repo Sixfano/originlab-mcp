@@ -296,7 +296,7 @@ Create `.trae/mcp.json` in the project root using the same format as above.
 <details>
 <summary><b>Codex (OpenAI)</b></summary>
 
-Create `.codex/config.json` in the project root using the same format as above.
+Codex uses a TOML configuration file. See the [Chinese Codex setup guide](docs/codex-setup-zh-CN.md) for the supported configuration format. The Codex one-click setup in the status page is currently not applicable.
 
 </details>
 
@@ -384,3 +384,4 @@ Check that:
 ## License
 
 [MIT](LICENSE) © 2025 garethbeaumo
+
