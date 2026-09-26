@@ -125,7 +125,7 @@ Server 启动后通过 stdio 等待客户端连接，首次调用 tool 时自动
 uv run originlab-mcp-ui
 ```
 
-然后访问 `http://127.0.0.1:8765/`。这个页面可以启动/停止一个调试用 MCP Server 子进程、测试 Origin 连接、**阅读当前 Origin 会话**（工作表和图表），并为 Antigravity / Gemini、Cursor、Codex、Trae、Claude Desktop 一键写入 `originlab` MCP 配置；正常使用时仍建议让 AI 客户端按配置自动拉起 Server。
+然后访问 `http://127.0.0.1:8765/`。这个页面可以启动/停止一个调试用 MCP Server 子进程、测试 Origin 连接、**阅读当前 Origin 会话**（工作表和图表），并为 Antigravity / Gemini、Cursor、Trae、Claude Desktop 一键写入 `originlab` MCP 配置；正常使用时仍建议让 AI 客户端按配置自动拉起 Server。Codex 请按[中文 Codex 配置指南](docs/codex-setup-zh-CN.md)手动配置；状态页中的 Codex 一键配置目前不适用。
 
 写入已有配置时会先创建 `.bak-时间戳` 备份。如果不希望启动时自动打开浏览器：
 
@@ -297,7 +297,7 @@ uv run originlab-mcp-ui
 <details>
 <summary><b>Codex (OpenAI)</b></summary>
 
-在项目根目录创建 `.codex/config.json`，内容格式同上。
+Codex 使用 TOML 格式配置，请按[中文 Codex 配置指南](docs/codex-setup-zh-CN.md)添加 MCP Server。状态页中的 Codex 一键配置目前不适用。
 
 </details>
 
@@ -385,3 +385,4 @@ originlab-mcp/
 ## 📜 许可证
 
 [MIT](LICENSE) © 2025 garethbeaumo
+
